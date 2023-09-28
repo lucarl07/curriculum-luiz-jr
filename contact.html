@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contate-me - Luiz Carlos Jr.</title>
+    <style>
+        body {
+            background-color: #5f9ea0; color: #fffbd5;
+            font: normal 12pt Verdana;
+        } 
+        
+        form input, form textarea {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Luiz Carlos Jr.</h1>
+    <a href="./index.html">Página inicial</a> | 
+    <a href="./hobby.html">Hobbies</a>
+
+    <h3>
+        <u>Contate-me:</u>
+    </h3>
+
+    <p>
+        <strong>Nome completo:</strong> Luiz Carlos dos Santos Júnior <br>
+        <strong>E-mail principal:</strong> junitinho2007@gmail.com <br>
+        <strong>Redes sociais:</strong> 
+        <a href="https://github.com/lucarl07">GitHub</a> | 
+        <a href="#">Instagram</a> <br>
+    </p> <hr>
+
+    <p>
+        <h3>
+            <u>Escreva sua mensagem!</u>
+        </h3>
+        Por aqui mesmo, você pode me enviar uma mensagem! Basta enviar uma solicitação <strong>preenchendo o formulário abaixo</strong>, e escrever o tópico que deseja tratar comigo!
+    </p>
+    
+    <form action="mailto:junitinho2007@gmail.com" method="post" enctype="text/plain">
+        
+        <label for="user_contact_name">Seu nome:</label> <br>
+        <input type="text" name="user_contact_name" id="user_contact_name" required placeholder="Ex.: João"> <br>
+
+        <label for="user_contact_surname">Seu sobrenome:</label> <br>
+        <input type="text" name="user_contact_surname" id="user_contact_surname" required placeholder="Ex.: da Silva"> <br>
+
+        <label for="user_contact_email">Seu email:</label> <br>
+        <input type="email" name="user_contact_email" id="user_contact_email" required placeholder="digite@seu.email"> <br>
+        
+        <label for="user_contact_msg">Digite sua mensagem:</label> <br>
+        <textarea name="user_contact_msg" id="user_contact_msg" cols="36" rows="6" required placeholder="O que gostaria de escrever?"></textarea> <br>
+        <input type="submit" value="Enviar mensagem">
+
+    </form>
+</body>
+</html>
